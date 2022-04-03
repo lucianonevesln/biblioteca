@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autores</title>
+</head>
+
+<body>
+
+    <h3>Cadastro de Autores</h3>
+    <form action = "{{ url_for('cad_autor2') }}" method = "POST" name = "teste">
+        <label for="">Nome do Autor: </label>
+        <input type="text" name="id_autor" id="id_autor"><br><br>
+        <input type="submit" name="retorno" value="Enviar">
+    </form><br>
+
+    <script>
+        var botao = document.createElement('button');
+        botao.innerHTML = '<a href="http://localhost:5002/">Menu</a>';
+        document.body.appendChild(botao);
+    </script>
+
+</body>
+</html>
